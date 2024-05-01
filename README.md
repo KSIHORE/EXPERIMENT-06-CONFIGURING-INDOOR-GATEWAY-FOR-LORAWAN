@@ -1,8 +1,10 @@
 # EXPERIMENT-06-CONFIGURING-INDOOR-GATEWAY-FOR-LORAWAN
 ## NAME:KISHORE.B
 ## REF.NO:212222110020
-## Aim: To  configure  Dragino LPS8 Indoor LoRaWAN gateway for things  network 
-## Components required: Dragino LPS8 Indoor LoRaWAN gateway, ETHERNET cable RJ45,Internet connection 
+## Aim: 
+To  configure  Dragino LPS8 Indoor LoRaWAN gateway for things  network 
+## Components required:
+Dragino LPS8 Indoor LoRaWAN gateway, ETHERNET cable RJ45,Internet connection 
 
 ## Theory :
 Dragino LPS8 Indoor LoRaWAN gateway
@@ -48,11 +50,13 @@ The LPS8 is configured as a WiFi Access Point by factory default. You can access
 
 2. At the first boot of LPS8, it will auto-generate a WiFi network called dragino-xxxxxx with password: dragino+dragino
 You can use a PC to connect to this WiFi network. The PC will get an IP address of 10.130.1.xxx and the LPS8 has the default IP 10.130.1.1.
+
 3. Connect via Ethernet with DHCP IP from router
 
 <img height=30% width=60% src="https://github.com/vasanthkumarch/EXPERIMENT-06-CONFIGURING-INDOOR-GATEWAY-FOR-LORAWAN/assets/36288975/fd2b1577-59ab-47f4-b6f5-202ceba6e7f2">
  
  Alternatively, connect the LPS8 Ethernet port to your router and LPS8 can obtain an IP address from your router. In the router’s management portal, you should be able to find what IP address the router has assigned to the LPS8. You can also use this IP to connect.
+
  4. Connect via WiFi with DHCP IP from router
 
 <img height=30% width=60% src="https://github.com/vasanthkumarch/EXPERIMENT-06-CONFIGURING-INDOOR-GATEWAY-FOR-LORAWAN/assets/36288975/56fcc965-4bb0-48cf-82f9-e30f4f268819">
@@ -73,6 +77,7 @@ Enter the User Name: root & Password: dragino. Then hit enter. A webpage like be
 <img height=30% width=60% src="https://github.com/vasanthkumarch/EXPERIMENT-06-CONFIGURING-INDOOR-GATEWAY-FOR-LORAWAN/assets/36288975/b84b5756-379d-4034-9ef2-957b64b35d33">
 
 7.The login page will show internet connectivity status. If it is connected to the internet, it is wifi or ethernet. The webpage will also show the status of LoRaWAN connection, the LoRa connection, and the Access point connection.At this moment the Dragino LPS8 LoRaWAN Indoor Gateway doesn’t have an internet connection. So, first, we need to configure the LPS8 as a WiFi client by providing the Wifi credentials.
+
 8.Go to the network, then click on WiFi.
 
 <img height=30% width=60% src="https://github.com/vasanthkumarch/EXPERIMENT-06-CONFIGURING-INDOOR-GATEWAY-FOR-LORAWAN/assets/36288975/df00a8ee-874d-4f65-a0a0-5b549cba7976">
@@ -96,8 +101,10 @@ Now uncheck the above Enable WiFi access point option and click on the save and 
 <img height=30% width=60% src="https://github.com/vasanthkumarch/EXPERIMENT-06-CONFIGURING-INDOOR-GATEWAY-FOR-LORAWAN/assets/36288975/545e66ad-741d-429a-bd9c-eff69140fa49">
 
 13. From the frequency option you need to select your LoRa frequency. Currently, I am using my LoRa devices from INDIA. So I choose  IN865 which is basically between  (865–867 MHz) 
+
 14. You can select the frequency band allowed in your region. There is also an option for GPS Enabling which you may enable or disable. Finally, click on save and apply.
 The frequency band is allocated now. Now we need to get the Gateway ID. To get that go to the following option as LoRaWAN Semtech UDP.
+
 15.Copy the Gateway ID as this will be required later. Then select the LoRaWAN Server as The Things Network . Select the server address  https://iot.saveetha.in
 
 <img height=30% width=60% src="https://github.com/vasanthkumarch/EXPERIMENT-06-CONFIGURING-INDOOR-GATEWAY-FOR-LORAWAN/assets/36288975/2b71b396-8d51-4fd2-aec0-50db96a01f30">
@@ -107,9 +114,9 @@ The frequency band is allocated now. Now we need to get the Gateway ID. To get t
 
 
 ## OUTPUT 
-<img height=30% width=60% src="https://github.com/KSIHORE/EXPERIMENT-06-CONFIGURING-INDOOR-GATEWAY-FOR-LORAWAN/assets/151484879/4b370cc5-a77d-43ff-8d66-2c1fa75559e8">
-<img height=30% width=60% src="https://github.com/KSIHORE/EXPERIMENT-06-CONFIGURING-INDOOR-GATEWAY-FOR-LORAWAN/assets/151484879/df1490a5-48b1-4792-8b09-ed8d89cc882a">
-<img height=30% width=60% src="https://github.com/KSIHORE/EXPERIMENT-06-CONFIGURING-INDOOR-GATEWAY-FOR-LORAWAN/assets/151484879/5629447d-328f-4d37-99ab-597026f6ff38">
+<img height=30% width=50% src="https://github.com/KSIHORE/EXPERIMENT-06-CONFIGURING-INDOOR-GATEWAY-FOR-LORAWAN/assets/151484879/4b370cc5-a77d-43ff-8d66-2c1fa75559e8">
+<img height=30% width=50% src="https://github.com/KSIHORE/EXPERIMENT-06-CONFIGURING-INDOOR-GATEWAY-FOR-LORAWAN/assets/151484879/df1490a5-48b1-4792-8b09-ed8d89cc882a">
+<img height=30% width=50% src="https://github.com/KSIHORE/EXPERIMENT-06-CONFIGURING-INDOOR-GATEWAY-FOR-LORAWAN/assets/151484879/5629447d-328f-4d37-99ab-597026f6ff38">
 
 
 
